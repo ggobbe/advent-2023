@@ -1,6 +1,6 @@
 defmodule AdventOfCode.InputReader do
-  def read(day) do
-    file_path = File.cwd!() <> "/inputs/#{day}.txt"
+  def read(file) do
+    file_path = File.cwd!() <> "/inputs/#{file}"
 
     case File.read(file_path) do
       {:ok, content} ->

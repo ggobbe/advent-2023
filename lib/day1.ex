@@ -17,7 +17,7 @@ defmodule AdventOfCode.Day1 do
 
   def part1 do
     answer =
-      InputReader.read("day1")
+      InputReader.read("day1.txt")
       |> String.split("\n")
       |> Enum.map(&extract_number/1)
       |> Enum.sum()
@@ -27,7 +27,7 @@ defmodule AdventOfCode.Day1 do
 
   def part2 do
     answer =
-      InputReader.read("day1")
+      InputReader.read("day1.txt")
       |> String.split("\n")
       |> Enum.map(&replace_text_numbers/1)
       |> Enum.map(&extract_number/1)
